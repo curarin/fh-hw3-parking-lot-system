@@ -50,7 +50,7 @@ public class Ticket {
             this.ticketStatus = TicketStatus.VALIDATED;
             System.out.printf("Ticket (%s) was successfully validated.\n", this.ticketNumber);
         } else if (this.ticketStatus == TicketStatus.ISSUED) {
-            System.out.printf("Ticket (%s) has not been paid yet (current status: %s). 💸", this.ticketNumber, this.ticketStatus);
+            System.out.printf("Ticket (%s) has not been paid yet (current status: %s). 💸\n", this.ticketNumber, this.ticketStatus);
         } else if (this.ticketStatus == TicketStatus.CLOSED || this.ticketStatus == TicketStatus.CANCELLED) {
             System.out.printf("Ticket (%s) has already been closed / canceled (current status: %s). Please issue a new ticket.\n", this.ticketNumber, this.ticketStatus);
         } else if (this.ticketStatus == TicketStatus.VALIDATED) {
